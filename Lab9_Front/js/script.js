@@ -74,7 +74,7 @@ function startGame() {
         setTimeout(() => {
             console.log(`Player: ${+scores[1].textContent}`);
             console.log(`Comp: ${+scores[0].textContent}`);
-            let winner = +scores[0].textContent > +scores[1].textContent ? "Computer" : playerName.textContent;
+            let winner = +scores[0].textContent > +scores[1].textContent ? "Computer" : playerName.innerText;
             popUpEnd.style.zIndex = "20";
             popUpEnd.style.opacity = "100";
             popUpEndText.innerText = `Winner: ${winner}`;
