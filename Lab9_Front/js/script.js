@@ -47,8 +47,8 @@ function startGame() {
     console.log(cardsElems[cardsArray[a]]);
     console.log(cardsElems[cardsArray[b]]);
 
-    player1.src = `../img/${cardsArray[a]}_1.png`;
-    player2.src = `../img/${cardsArray[b]}_2.png`;
+    player1.src = `img/${cardsArray[a]}_1.png`;
+    player2.src = `img/${cardsArray[b]}_2.png`;
 
     player.onclick = null;
 
@@ -72,9 +72,9 @@ function startGame() {
 
     if (time >= 3 ) {
         setTimeout(() => {
-            console.log(`Player: ${+scores[1].innerHTML}`);
-            console.log(`Comp: ${+scores[0].innerHTML}`);
-            let winner = +scores[0].innerHTML > +scores[1].innerHTML ? "Computer" : playerName;
+            console.log(`Player: ${+scores[1].textContent}`);
+            console.log(`Comp: ${+scores[0].textContent}`);
+            let winner = +scores[0].textContent > +scores[1].textContent ? "Computer" : playerName;
             popUpEnd.style.zIndex = "20";
             popUpEnd.style.opacity = "100";
             popUpEndText.innerText = `Winner: ${winner}`;
