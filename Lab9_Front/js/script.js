@@ -72,8 +72,8 @@ function startGame() {
 
     if (time >= 3 ) {
         setTimeout(() => {
-            console.log(`Player: ${+scores[1].innerHTML}`);
-            console.log(`Comp: ${+scores[0].innerHTML}`);
+            console.log(`Player: ${+scores[1].textContent}`);
+            console.log(`Comp: ${+scores[0].textContent}`);
             let winner = +scores[0].textContent > +scores[1].textContent ? "Computer" : playerName;
             popUpEnd.style.zIndex = "20";
             popUpEnd.style.opacity = "100";
