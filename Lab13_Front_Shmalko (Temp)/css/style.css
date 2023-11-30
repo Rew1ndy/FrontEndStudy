@@ -1,0 +1,128 @@
+*, * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: #222;
+    color: white;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 50px;
+    padding-top: 80px;
+
+    transition: all 0.2s ease;
+}   
+
+.menu-list {
+    position: relative;
+    background-color: #444;
+    padding: 15px;
+    opacity: 0.5;
+    border-radius: 10px;
+
+    transition: all 0.2s ease;
+}
+
+.menu-list:hover {
+    opacity: 1;
+}
+
+.img-list {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.Lab7 {
+    background-image: url('../img/1.png');
+}
+
+.Lab8 {
+    background-image: url('../img/2.png');
+}
+
+.Lab9 {
+    background-image: url('../img/3.png');
+}
+
+.Lab10 {
+    background-image: url('../img/4.png');
+}
+
+.naming {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    background-color: #222;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #cfcfcf;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.info {
+    padding: 10px;
+    text-align: justify;
+}
+
+header, footer {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-color: #333;
+    padding: 15px 0;
+    font-size: 1.5rem;
+
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+footer {
+    bottom: 0;
+}
+
+header {
+    top: 0;
+}
+
+@media (max-width: 1495px) {
+    header {
+        top: -50px;
+    }
+    footer {
+        bottom: -50px;
+    }
+}
