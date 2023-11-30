@@ -1,0 +1,29 @@
+.top {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    background-color: #555;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+
+    transform: translateY(-60px);
+    transition: all 0.2s ease;
+    z-index: 999;
+}
+
+.top:hover {
+    transform: translateY(0);
+}
+
+.top a {
+    color: white;
+    background-color: #333;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
